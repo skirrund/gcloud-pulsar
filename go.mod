@@ -4,10 +4,8 @@ go 1.17
 
 require (
 	github.com/apache/pulsar-client-go v0.8.1
-	github.com/skirrund/gcloud v0.4.7
+	github.com/skirrund/gcloud v0.5.0
 )
-
-replace github.com/skirrund/gcloud => /Users/jerry.shi/Documents/workspace-github/gcloud
 
 require (
 	github.com/99designs/keyring v1.1.6 // indirect
