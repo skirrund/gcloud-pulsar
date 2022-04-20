@@ -18,7 +18,7 @@ func (pc *PulsarClient) getProducer(topic string) (pulsar.Producer, error) {
 	p, ok := producers[topic]
 	if ok && p != nil {
 		logger.Info("[pulsar]load producer fromcache1:", topic, ",", true)
-		return p.(pulsar.Producer), nil
+		return p, nil
 	}
 	pc.mt.Lock()
 	defer pc.mt.Unlock()
@@ -31,7 +31,7 @@ func (pc *PulsarClient) getProducer(topic string) (pulsar.Producer, error) {
 		logger.Info("[pulsar]load producer fromcache2:", topic, ",", true)
 	}
 
-	return p.(pulsar.Producer), err
+	return p, err
 }
 
 func createProducer(topic string) (pulsar.Producer, error) {

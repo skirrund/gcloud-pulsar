@@ -1,4 +1,4 @@
-module gcloud-pulsar
+module github.com/skirrund/gcloud-pulsar
 
 go 1.17
 
