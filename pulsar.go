@@ -139,8 +139,11 @@ func (pc *PulsarClient) doSubscribe(opts mq.ConsumerOptions) error {
 		opts.RetryTimes = MAX_RETRY_TIMES
 	}
 	schema := pulsar.NewJSONSchema(`"string"`, nil)
-
-	channel := make(chan pulsar.ConsumerMessage, 100)
+	channelSize := opts.MaxMessageChannelSize
+	if channelSize == 0 {
+		channelSize = 200
+	}
+	channel := make(chan pulsar.ConsumerMessage, channelSize)
 	options.MessageChannel = channel
 	consumer, err := pc.client.Subscribe(options)
 	if err != nil {
