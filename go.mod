@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/apache/pulsar-client-go v0.10.0
-	github.com/skirrund/gcloud v0.6.9
+	github.com/skirrund/gcloud v0.6.13
 )
 
 require (
@@ -15,7 +15,7 @@ require (
 	github.com/ardielle/ardielle-go v1.5.2 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/bits-and-blooms/bitset v1.4.0 // indirect
-	github.com/bytedance/sonic v1.8.6 // indirect
+	github.com/bytedance/sonic v1.8.8 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
 	github.com/chenzhuoyu/base64x v0.0.0-20221115062448-fe3a3abad311 // indirect
 	github.com/danieljoos/wincred v1.1.2 // indirect

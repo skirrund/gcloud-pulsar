@@ -3,6 +3,7 @@ package pulsar
 import (
 	"errors"
 	"runtime"
+	"runtime/debug"
 	"sync"
 	"time"
 
@@ -161,6 +162,11 @@ func (pc *PulsarClient) doSubscribe(opts mq.ConsumerOptions) error {
 	return nil
 }
 func consume(cm pulsar.ConsumerMessage, consumer pulsar.Consumer, schema pulsar.Schema, opts mq.ConsumerOptions) {
+	defer func() {
+		if err := recover(); err != nil {
+			logger.Error("[pulsar] consumer panic recover :", err, "\n", string(debug.Stack()))
+		}
+	}()
 	msg := cm.Message
 	var msgStr string
 	logger.Infof("[pulsar] consumer info=>subName:%s,msgId:%v,reDeliveryCount:%d,publishTime:%v,producerName:%s", cm.Subscription(), msg.ID(), msg.RedeliveryCount(), msg.PublishTime(), msg.ProducerName())
