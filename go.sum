@@ -184,8 +184,8 @@ github.com/shoenig/go-m1cpu v0.1.6 h1:nxdKQNcEB6vzgA2E2bvzKIYRuNj7XNJ4S/aRSwKzFt
 github.com/shoenig/go-m1cpu v0.1.6/go.mod h1:1JJMcUBvfNwpq05QDQVAnx3gUHr9IYF7GNg9SUEw2VQ=
 github.com/sirupsen/logrus v1.9.3 h1:dueUQJ1C2q9oE3F7wvmSGAaVtTmUizReu6fjN8uqzbQ=
 github.com/sirupsen/logrus v1.9.3/go.mod h1:naHLuLoDiP4jHNo9R0sCBMtWGeIprob74mVsIT4qYEQ=
-github.com/skirrund/gcloud v0.9.1 h1:nV1ftgvws2DMikQMlYd+u1/lN4+9uf9mnAE9bXGevyM=
-github.com/skirrund/gcloud v0.9.1/go.mod h1:liErOIi2tDxi1Nk4wC5FYbMq8yDHvUPIIp/JM+HnELs=
+github.com/skirrund/gcloud v0.9.4 h1:mwzV2PDwHIPmuWjFGunS58AqZgvTvgvyGsN4+7Pslgs=
+github.com/skirrund/gcloud v0.9.4/go.mod h1:nY8i4mJQ82xpAIYdLaDjcmS1SlXWSj9Mejhs1yyZG18=
 github.com/spaolacci/murmur3 v1.1.0 h1:7c1g84S4BPRrfL5Xrdp6fOJ206sU9y293DDHaoy0bLI=
 github.com/spaolacci/murmur3 v1.1.0/go.mod h1:JwIasOWyU6f++ZhiEuf87xNszmSA2myDM2Kzu9HwQUA=
 github.com/stretchr/objx v0.1.0/go.mod h1:HFkY916IF+rwdDfMAkV7OtwuqBVzrE8GR6GFx+wExME=

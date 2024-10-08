@@ -4,7 +4,7 @@ go 1.22
 
 require (
 	github.com/apache/pulsar-client-go v0.13.1
-	github.com/skirrund/gcloud v0.9.1
+	github.com/skirrund/gcloud v0.9.4
 )
 
 require (
